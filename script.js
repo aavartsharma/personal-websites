@@ -2,7 +2,6 @@
 $(window).on('scroll', function(){
 	if($(window).scrollTop()){
       $('header').addClass('nav-show');
-		  
 	} 
 	else{
 		$('header').removeClass('nav-show');
@@ -35,3 +34,27 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+
+// smooth animation for the nav bar buttons
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+function codesection() {
+  let passcode = prompt("what the passcode?");
+  if(passcode == "class")
+  {
+    window.location.href = 'code.html';
+  }
+  else
+  {
+    let wrongcomfirm = comfirm("passcode is wrong. please try again");
+    if(wrongcomfirm)
+    {
+      codesection();
+    }
+  }
+}
+//alert(`this website is an uncomplete project. if you have any good suggestions related to this website pls content me`);

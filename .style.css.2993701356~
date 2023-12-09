@@ -4,7 +4,7 @@
 	--main-background: #0b0c0f;
 	--main-fonts-color: #fff;
 	--main-decor-color:#00a9e2;
-  --main-header-background:#21252e;
+    --main-header-background:#21252e;
 	--main-font-family: 'Poppins', sans-serif;
 }
 
@@ -15,7 +15,7 @@
 }
 
 main{
-  padding:0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 	background: var(--main-background);
@@ -30,9 +30,9 @@ header{
 	width: 100%;
 	height: 70px;
 	display: flex;
-  align-items: center; 
+    align-items: center; 
 	justify-content: space-around; 
-  background: transparent;
+    background: transparent;
 	position: fixed;
 	top: 0;
 	transition: 0.3s;
@@ -76,19 +76,14 @@ a.nav-link{
 
 .nav-link:hover {
 	color: #000000;
-  background: var(--main-decor-color);
-}
-
-#itchb
-{
-  text-decoration: underline;
+    background: var(--main-decor-color);
 }
 
 /*──────────────────
        home
 ──────────────────*/
 
-#home{
+#home{ 	
 	margin: auto;
 	height: 100vh;
 	color: var(--main-fonts-color);
@@ -126,26 +121,16 @@ a.nav-link{
 	text-align:center;
 }
 
-h3{
+ h3{
 	padding-bottom: 15px;
-  letter-spacing: normal;
-  font-family: var(--main-font-family);
+    letter-spacing: normal;
+    font-family: var(--main-font-family);
 	font-style: normal;
 	font-size: 60px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
-h5{
-  padding-top: 30px;
-	padding-bottom: 15px;
-  letter-spacing: normal;
-  font-family: var(--main-font-family);
-	font-style: normal;
-	font-size: 35px;
-	color: var(--main-fonts-color);
-	text-shadow: 0px 0px 40px var(--main-decor-color);
-}
 
 /*──────────────────
     social media
@@ -155,15 +140,15 @@ h5{
 	padding: 10px;
 	display: flex;
 	position: center;
-  align-items: space-around;
+    align-items: space-around;
 	justify-content:center;
 }
 
 .social-media a {
-  margin: 10px;
-  font-size: 2rem;
-  text-align:center;
-  display: inline-block;
+    margin: 10px;
+    font-size: 2rem;
+    text-align:center;
+    display: inline-block;
 	color: var(--main-fonts-color);
 }
 
@@ -183,113 +168,28 @@ h5{
 
 #projects{
 	margin-top:100px;
-  height: 100%;
+    height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  justify-content: center;
+    justify-content: center;
 	text-align:center;
 	color: var(--main-fonts-color);
 }
-
 #projects h3{
     padding-top: 70px;
 }
 
-.image
-{
-  height: 170px;
-  width: 300px;
-}
-
 .projests
 {
-  margin: 45px;
-  height: 260px;
-  width: 300px;
-  background-color: black;
-  border-radius: 40px;
-  padding: 17px;
+  margin : 45px;
+  height : 167px;
+  width : 208px;
+  background-color : black;
+  border-color : black;
 }
 
-.work a
-{
-  text-decoration : none;
-  color: var(--main-fonts-color);
-  font-size: 1.3rem;
-  text-align : center;
-  align-items: center;
-  display: flex;
-  margin: 0px 105px;
-  text-shadow: 0px 0px 40px white;
-}
-
-#projects-1
-{
-  border : 4px solid #5a8f00;
-  /* border-color : #4c7800; */
-}
-
-#projects-2
-{
-  border : 4px solid #240461b3;
-  /* border-color : #240461b3; */
-}
-
-#projects-3
-{
-  border : 4px solid #ff000099;
-  /* border-color : #ff000099; */
-}
-
-#projects-4
-{
-  border : 4px solid #ff009bad;
-  /* border-color : #ff009bad; */
-}
-
-#projects-1:hover
-{
-  background-color: #4c7800;
-  /* border-color : #4c7800; 
-  color: #4c7800;
-	text-shadow: 0 0 50px #4c7800;
-  size : 23px;*/
-}
-
-#projects-2:hover
-{
-  background-color: #240461b3;
-  /* border-color : #240461b3; 
-  color: #240461b3;
-	text-shadow: 0 0 50px #240461b3;
-  size : 23px;*/
-}
-
-#projects-3:hover
-{
-  background-color: #ff000099;
-  /* border-color : #ff000099; */
-}
-
-#projects-4:hover
-{
-  background-color: #ff009bad;
-  /* border-color : #ff009bad; */
-}
-
-.work a p
-{
-  text-shadow: 0px 0px 30px #00ffbf;
-}
-
-.work img
-{
-  border-radius : 38px;
-}
-
-#projects p
-{
+#projects p{
 	font-family: var(--main-font-family);
 	font-size:1.2rem;
 	padding: 10px;
@@ -298,11 +198,10 @@ h5{
 .work{
 	display: flex; 
 	flex: 1;
-  flex-wrap: wrap;
-  justify-content:center;
+    flex-wrap: wrap;
+    justify-content:center;
 	align-items: center;
 	padding: 20px;
-  margin: 0px 100px;
 }
 
 .card{
@@ -312,7 +211,7 @@ h5{
 	width: 200px;
 	height:250px;
 	border-radius:12px;
-  background:var(--main-decor-color);
+    background:var(--main-decor-color);
 }
 
 .card img{
@@ -342,11 +241,6 @@ h5{
 	box-shadow: 0 0 1.5rem gray;
 }
 
-#project-1
-{
-  color: pink;
-}
-
 /*──────────────────
       Contact
 ──────────────────*/
@@ -369,30 +263,6 @@ h5{
 	font-family: var(--main-font-family);
 }
 
-#codebutton
-{
-  background-color:#007BFF;
-  color: white;
-  border:none;
-  padding : 10px 20px;
-  text-align: center;
-  text-decoration:none;
-  display:inline-block;
-  font-size:16px;
-  border-radius:5px;
-  cursor:pointer;
-}
-
-#codebutton:hover{
-  background-color: #0056b3;
-}
-
-#buttonA
-{
-  text-decoration:none;
-  color:white;
-}
-
 /*────────────────── 
        footer
 ──────────────────*/
@@ -400,7 +270,7 @@ h5{
 footer {
 	width: 100%;
 	height: 100%;
-  background-color: var(--main-header-background);
+    background-color: var(--main-header-background);
 }
 
 .copyright {
@@ -424,14 +294,14 @@ footer {
 /*──── hr ─────*/
 
 hr {
-  background: var(--main-decor-color);
+    background: var(--main-decor-color);
 	margin: 2px;
 	height: 3px;
 	width: 150px;
-  border-radius:5px;
+    border-radius:5px;
 	border: hidden;
 	margin-inline-start: auto;
-  margin-inline-end: auto;
+    margin-inline-end: auto;
 }
 
 /*────────────────── 
@@ -495,23 +365,17 @@ hr {
 
 @media only screen and (max-width: 1484px) and (min-width: 1214px) {
 	.work{
-    padding:20px 20%;
-  }
+        padding:20px 20%;
+    }
 }
 @media only screen and (max-width: 1214px) and (min-width: 1000px) {
 	.work{
-    padding:20px 12%;
-  }
+        padding:20px 12%;
+    }
 }
 
-@media only screen and (min-width: 585px) {
-	.lines
-  {
-    display : none;
-  }
-}
 
-@media only screen and (max-width: 500px) {/*the mobile media inquary */
+@media only screen and (max-width: 500px) {
 
 	#home, #projects, #contact{
         overflow-x: hidden;
@@ -545,7 +409,7 @@ hr {
 	.hamburger{
 		position:absolute;
 		top: 17px;
-		right: 10%;
+		right: 25%;
 		display: block;
 		cursor:pointer;
 		z-index: 5;
@@ -553,19 +417,7 @@ hr {
 	.nav-bar li{
 		opacity:0;
 	}
-
-  /*change i made*/
-  #h3heading 
-  {
-    padding-top: 290px;
-    /*padding-top: 320px;*/
-  }
-  .aboutme
-  {
-    font-size: 1rem;
-  }
 }
-
 
 .nav-active{
 	transform:translatex(0%);
