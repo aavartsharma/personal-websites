@@ -1,3 +1,5 @@
+
+// the project dict for the projects
 let projectDict = {
   "Cubethon": {"link": "https://aavart-sharma.itch.io/cubethon",
   "image" : "./logo/cube.jpg", 
@@ -24,6 +26,9 @@ let projectDict = {
   "color":"#00a9e2",
   "image-class" : "image-Sk"}
 };
+
+
+
 
 
 
@@ -108,6 +113,37 @@ for(let projectName in projectDict)
 
   let div = document.createElement("div");
   div.id = "projects-"+ number;
+  div.style.borderWidth = "7px";
+  div.style.borderStyle = "solid";
+  div.style.borderColor = projectDict[projectName]["color"];
+  div.style.transition = "background-color 0.8s ease";
+  div.addEventListener("mouseover", () => {
+    div.style.backgroundColor = projectDict[projectName]["color"];
+    div.style.cursor = "pointer";
+    div.style.transition = "background-color 0.8s ease";
+    div.style.transition = "hoverIn 0.8s forward";
+    /*div.style.addKeyframes(`
+      @keyframes hoverIn {
+        100% { 
+          padding: 24px;
+        }
+      }
+    `);*/
+  });
+
+  div.addEventListener("mouseout", () => {
+    div.style.transition = "background-color 0.8s ease"; 
+    div.style.backgroundColor = "black";
+    div.style.transition = "hoverOut 0.8s forward";
+    /*div.style.addKeyframes(`
+      @keyframes hoverOut {
+        100% { 
+          padding: 15px;
+        }
+      }
+    `);*/
+  });
+
   div.classList.add("projects");
   achor.appendChild(div);
 
