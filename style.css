@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root {
-	--main-background: #0b0c0fc7;
+	--main-background: black;
 	--main-fonts-color: #fff;
 	--main-decor-color: #00a9e2;
 	--main-header-background: #21252e;
@@ -12,6 +12,7 @@
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	z-index: 1;
 }
 
 main {
@@ -111,7 +112,7 @@ a.nav-link {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	opacity: .25;
+	opacity: 0.25;
 }
 
 
@@ -153,8 +154,7 @@ h4 {
 }
 
 h5 {
-	padding-top: 30px;
-	padding-bottom: 15px;
+	padding: 30px 0px;
 	letter-spacing: normal;
 	font-family: var(--main-font-family);
 	font-style: normal;
@@ -208,22 +208,22 @@ h5 {
 	color: var(--main-fonts-color);
 }
 
-#projects .imggg{
+#projects #projectImage{
 	background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Gn67FLVSiYsnUaU1g1TgFwHaEK%26pid%3DApi&f=1&ipt=25738cf1f89b0c022ca91b101b1c792fdc687342bec72e168982686ded26a85b&ipo=images') no-repeat;
 	background-size: cover;
-	background-position: bottom;
 	position: fixed;
+	background-position: bottom;
 	top: 0px;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	opacity: 1.5;
-	z-index: -1;
+	opacity: 0;
 }
 
 #projects h3 {
 	padding-top: 70px;
 }
+
 
 .image {
 	height: 170px;
@@ -540,7 +540,6 @@ hr {
 		opacity: 0;
 	}
 
-	/*change i made*/
 	#h3heading {
 		padding-top: 290px;
 		/*padding-top: 320px;*/

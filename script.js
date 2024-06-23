@@ -28,7 +28,18 @@ let projectDict = {
 };
 
 
-
+function setBackimage()
+{
+  let image = document.getElementById("projectImage");
+  if(window.scrollY > 750)
+  {
+    image.style.opacity = "25%";
+  }
+  else
+  {
+    image.style.opacity = (window.scrollY * 0.02).toString() + "%";
+  }
+}
 
 
 
@@ -40,8 +51,10 @@ $(window).on('scroll', function(){
 	else{
 		$('header').removeClass('nav-show');
 	}
-	   
+	setBackimage();
 })
+
+
 
 //hamburger
 const navSlide = () => {
