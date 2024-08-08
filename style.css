@@ -176,6 +176,11 @@ h5 {
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
+h6{
+	text-decoration: none;
+	color: #cb5353;   /*#438b88*/
+}
+
 /*──────────────────
     social media
 ──────────────────*/

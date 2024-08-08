@@ -2,30 +2,40 @@
 // the project dict for the projects
 let projectDict = {
   "Cubethon": {"link": "https://aavart-sharma.itch.io/cubethon",
-  "image" : "./logo/cube.jpg", 
-  "color" : "#5a8f00",
-  "image-class" : "image"
+    "image" : "./logo/cube.jpg", 
+    "color" : "#5a8f00",
+    "image-class" : "image",
+    "store" : ["itch.io"]
   },
   "Monster Chase": {"link" : "https://aavart-sharma.itch.io/moster-chase", 
   "image" : "./logo/ms.png", 
   "color" : "#240461b3",
-  "image-class" : "image"},
+  "image-class" : "image",
+  "store" : ["itch.io"]
+},
 
   "Demolished by forest of brainwashers": {"link": "https://aavart-sharma.itch.io/d-f-b",
   "image": "./logo/dfb.png", 
   "color" : "#ff000099",
-  "image-class" : "image"},
+  "image-class" : "image",
+  "store" : ["itch.io"]
+},
 
   "Cubethon 2": {"link": "https://aavart-sharma.itch.io/cubethon-2",
   "image": "./logo/cube2.jpg",
   "color" : "#ff009bad",
-  "image-class" : "image"},
+  "image-class" : "image",
+  "store" : ["itch.io"]
+},
 
   "Skyward Assault": {"link": "https://play.google.com/store/apps/details?id=com.aavartsharma.skywardassault&pcampaignid=web_share",
   "image":"./logo/SA.png",
   "color":"#00a9e2",
-  "image-class" : "image-Sk"}
+  "image-class" : "image-Sk",
+  "store" : ["Google Play Store"]
+}
 };
+console.log(projectDict);
 
 
 function setBackimage()
@@ -135,13 +145,6 @@ for(let projectName in projectDict)
     div.style.cursor = "pointer";
     div.style.transition = "background-color 0.8s ease";
     div.style.transition = "hoverIn 0.8s forward";
-    /*div.style.addKeyframes(`
-      @keyframes hoverIn {
-        100% { 
-          padding: 24px;
-        }
-      }
-    `);*/
   });
 
   div.addEventListener("mouseout", () => {
@@ -179,6 +182,11 @@ for(let projectName in projectDict)
   line.classList.add("lines");
   mainDiv.appendChild(line);
   number++;
+
+  let avablityTag = document.createElement("h6");
+  let StoreString = "Availabile On " + projectDict[projectName]["store"];
+  avablityTag.innerText = StoreString;
+  div.appendChild(avablityTag);
 }
 
 
