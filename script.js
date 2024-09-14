@@ -35,7 +35,6 @@ let projectDict = {
   "store" : ["Google Play Store"]
 }
 };
-console.log(projectDict);
 
 
 function setBackimage()
@@ -174,7 +173,6 @@ for(let projectName in projectDict)
   let para = document.createElement("p");
   para.textContent = projectName;
   div.appendChild(para);
-  console.log(achor);
 
   let mainDiv = document.getElementById("projectsdiv");
   mainDiv.appendChild(achor);
@@ -184,10 +182,23 @@ for(let projectName in projectDict)
   number++;
 
   let avablityTag = document.createElement("h6");
+  if(Math.random()>0.5)
+  {
+    avablityTag.style.color = "#cb5353";
+
+  }
+  else{
+    avablityTag.style.color = "#438b88";
+  }
   let StoreString = "Availabile On " + projectDict[projectName]["store"];
   avablityTag.innerText = StoreString;
   div.appendChild(avablityTag);
 }
 
+let now = new Date();
+
+// Get the current year
+let year = now.getFullYear();
+document.getElementById("year").innerHTML = "© " + year.toString();
 
 //alert(`this website is an uncomplete project. if you have any good suggestions related to this website pls content me`);

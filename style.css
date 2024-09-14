@@ -406,6 +406,10 @@ footer {
 	height: 100%;
 	background-color: var(--main-header-background);
 }
+#year
+{
+	display: inline-block;
+}
 
 .copyright {
 	color: #fff;
